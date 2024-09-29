@@ -4,8 +4,11 @@ Kula Extra is a Flutter-based mobile app designed to minimize food waste by conn
 
 This project is part of the final submission for the Dart-Flutter course.
 
-App Features
+# App Features
 User Registration & Login: Users can register with their name, institution, email, phone number, and password.
 Food Sharing Platform: Users can list surplus food items for others to collect.
 Navigation Sidebar: Easily navigate through different sections of the app using a sidebar with clickable titles.
 Taupe & Turquoise Theme: Aesthetic and user-friendly UI with a custom taupe and turquoise color theme.
+
+# Pitch Deck
+Link(https://www.canva.com/design/DAGSH_jI1Os/oVLYq9mixdjZ1OPbz0Qfww/view?utm_content=DAGSH_jI1Os&utm_campaign=designshare&utm_medium=link&utm_source=editor)

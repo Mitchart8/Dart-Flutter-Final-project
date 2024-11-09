@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "617252797955",
+    "project_id": "kulaextra",
+    "storage_bucket": "kulaextra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617252797955:android:f7330813888aa7d8c7d836",
+        "android_client_info": {
+          "package_name": "com.example.kula_extra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqsK4dpYYFN7Rbw8UMrFKSK0yMfLKR4Kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

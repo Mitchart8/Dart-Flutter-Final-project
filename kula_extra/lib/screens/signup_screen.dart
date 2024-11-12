@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kula_extra/reusable_widgets/reusable_widget.dart';
-import 'package:kula_extra/screens/home_screen.dart';
+import 'package:kula_extra/screens/signin_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -51,18 +51,24 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 const SizedBox(
                   height: 10,
                 ),
-                signInSignUpButton(context, false, () {
-                  FirebaseAuth.instance.createUserWithEmailAndPassword(
-                    email: _emailTextController.text,
-                    password: _passwordTextController.text)
-                  .then((value) {
-                  // ignore: use_build_context_synchronously
-                  Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const HomeScreen()));
-                  });
-                  
+                signInSignUpButton(context, false, () async {
+  try {
+    await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      email: _emailTextController.text,
+      password: _passwordTextController.text,
+    );
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const SignInScreen()),
+    );
+  } catch (e) {
+    print("Error: $e"); // Log the error to debug if something goes wrong
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text("Error signing up: $e")),
+    );
+  }
+})
 
-                })
               ],
             ),
             ),

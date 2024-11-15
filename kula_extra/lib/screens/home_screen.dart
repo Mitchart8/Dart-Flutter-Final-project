@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kula_extra/reusable_widgets/reusable_widget.dart';
+import 'package:kula_extra/screens/details.dart';
 
 
 
@@ -14,16 +15,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
 // ignore: non_constant_identifier_names
 bool dining=false, wallet=false, shopping_cart=false, delivery=false;
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.teal,
+        backgroundColor: const Color.fromARGB(255, 253, 176, 10),
         elevation: 0,
         title: const Text(
-          "KulaExtra",
+          "Home",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       ),
@@ -148,29 +149,34 @@ bool dining=false, wallet=false, shopping_cart=false, delivery=false;
                  child: Row(
                   children: [ 
                    const SizedBox(width: 15.0,),         
-                  Container(
-                    margin: const EdgeInsets.all(5),
-                    child: Material(
-                      elevation: 5.0,
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        padding: const EdgeInsets.all(14),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                          Image.asset("assets/images/food 1.jpeg", height: 150, width: 150, fit: BoxFit.cover,),
-                          Text("Veggie Taco", style: semiBoldTextFieldStyle()),
-                          const SizedBox(
-                            height: 5.0,
-                          ),
-                          Text("Healthy", style: lightTextFieldStyle()),
-                          const SizedBox(
-                            height: 5.0,
-                          ),
-                          Text("\$25", style: semiBoldTextFieldStyle(),)
-                      
-                      
-                        ],),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Details()));
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.all(5),
+                      child: Material(
+                        elevation: 5.0,
+                        borderRadius: BorderRadius.circular(20),
+                        child: Container(
+                          padding: const EdgeInsets.all(14),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                            Image.asset("assets/images/food 1.jpeg", height: 150, width: 150, fit: BoxFit.cover,),
+                            Text("Veggie Taco", style: semiBoldTextFieldStyle()),
+                            const SizedBox(
+                              height: 5.0,
+                            ),
+                            Text("Healthy", style: lightTextFieldStyle()),
+                            const SizedBox(
+                              height: 5.0,
+                            ),
+                            Text("\$25", style: semiBoldTextFieldStyle(),)
+                        
+                        
+                          ],),
+                        ),
                       ),
                     ),
                   ),
@@ -198,7 +204,45 @@ bool dining=false, wallet=false, shopping_cart=false, delivery=false;
                         ],),
                       ),
                     ),
-                  )
+                  ),
+
+                  Container(
+  margin: const EdgeInsets.only(right: 10.0),
+  child: Material(
+    elevation: 5.0,
+    borderRadius: BorderRadius.circular(20.0),
+    child: Container(
+      padding: const EdgeInsets.all(5),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Image.asset("assets/images/food 1.jpeg", height: 120, width: 120, fit: BoxFit.cover),
+          const SizedBox(width: 20.0),
+          Column(
+            children: [
+              const SizedBox(height: 5.0),
+              Container(
+                width: MediaQuery.of(context).size.width / 2,
+                child: Text("Salad", style: semiBoldTextFieldStyle()),
+              ),
+              const SizedBox(height: 5.0),
+              Container(
+                width: MediaQuery.of(context).size.width / 2,
+                child: Text("Fresh and healthy", style: lightTextFieldStyle()), // Adjusted to improve consistency
+              ),
+              const SizedBox(height: 5.0),
+              Container(
+                width: MediaQuery.of(context).size.width / 2,
+                child: Text("\$25", style: semiBoldTextFieldStyle()),
+              ),
+            ],
+          ),
+        ],
+      ),
+    ),
+  ),
+),
+
                  ],),
                ),
              

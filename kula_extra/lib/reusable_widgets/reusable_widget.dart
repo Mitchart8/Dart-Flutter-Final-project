@@ -124,8 +124,8 @@ class GradientBackground extends StatelessWidget {
       decoration:const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFFFFA726), // Light orange
-            Color(0xFF40E0D0), // Turquoise
+            //Color(0xFFFFA726), // Light orange
+            Color.fromARGB(255, 4, 102, 92), // Turquoise
             Color(0xFFFF7043), // Darker orange
           ],
           begin: Alignment.topCenter,

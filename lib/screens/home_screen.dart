@@ -45,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
             return GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/details');
+                
               },
               child: Card(
                 shape: RoundedRectangleBorder(

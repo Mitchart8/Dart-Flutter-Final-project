@@ -1,16 +1,15 @@
-# kula_extra
+# Dart-Flutter-Final-project:Kula Extra
+# Project Overview
+Kula Extra is a Flutter-based mobile app designed to minimize food waste by connecting users with surplus food. The app allows institutions or individuals to share food that would otherwise go to waste. It has a clean, intuitive interface built with Dart and Flutter, featuring a consistent taupe and turquoise color theme throughout the app.
 
-A new Flutter project.
+This project is part of the final submission for the Dart-Flutter course.
 
-## Getting Started
+# App Features
+- User Registration & Login: Users can register with their name, institution, email, phone number, and password.
+- Food Sharing Platform: Users can list surplus food items for others to collect.
+- Navigation Sidebar: Easily navigate through different sections of the app using a sidebar with clickable titles.
+- Taupe,Turquoise & Orange Theme: Aesthetic and user-friendly UI with a custom taupe and turquoise color theme.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Pitch Deck
+Link(https://www.canva.com/design/DAGSH_jI1Os/oVLYq9mixdjZ1OPbz0Qfww/view?utm_content=DAGSH_jI1Os&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+>>>>>>> e9eb7d1fff0d23db7b4f38228512f27b2ac45551
